@@ -5,7 +5,7 @@ import Lumenpkg from '@theojs/lumen/package.json' with { type: 'json' }
 import { head, markdown, nav, search, sidebar, socialLinks, transformPageData } from './configs'
 
 const Lumenversion = `v` + Lumenpkg.version
-const baseUrl = 'https://lumen.theojs.cn'
+const baseUrl = 'https://aetherdev22.github.io'
 
 export default defineConfig({
   // 站点名称
@@ -15,7 +15,7 @@ export default defineConfig({
   description: '✨ 专为 VitePress 打造的主题美化与 Vue 扩展组件库',
 
   // 站点语言
-  lang: 'zh-Hans',
+  lang: 'id-ID',
 
   // 开启后网址后缀无'html'
   cleanUrls: true,
