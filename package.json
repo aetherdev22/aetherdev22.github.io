@@ -1,37 +1,20 @@
 {
-  "name": "lumen",
+  "name": "aetherdev22",
   "private": true,
-  "homepage": "https://lumen.theojs.cn/",
-  "repository": "s-theo/lumen",
+  "homepage": "https://aetherdev22.github.io/",
+  "repository": "s-aetherdev22",
   "license": "MIT",
   "author": "Theo",
   "scripts": {
-    "build": "pnpm -F=docs build",
-    "change": "cd src && pnpm dlx changelogithub --dry",
+    "docs:build": "pnpm -F=docs build",
+    "docs:dev": "pnpm -F=docs dev",
+    "docs:preview": "pnpm -F=docs preview",
     "clean": "pnpm clean:pnpm && pnpm clean:nm && pnpm clean:vp",
     "clean:nm": "rm -rf */node_modules node_modules pnpm-lock.yaml",
     "clean:pnpm": "rm -rf pnpm store prune && pnpm cache delete '*'",
     "clean:vp": "rm -rf docs/.vitepress/{cache,dist}",
-    "commitlint": "commitlint --edit",
-    "cz": "git-cz",
-    "dev": "pnpm -F=docs dev",
-    "format": "prettier --experimental-cli --write .",
-    "format:cheak": "prettier --experimental-cli --check .",
     "iall": "pnpm -r install",
-    "preview": "pnpm -F=docs preview",
-    "release": "cd src && pnpm release",
     "upall": "pnpm -r update --latest"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged"
-  },
-  "lint-staged": {
-    "*": "prettier --experimental-cli --ignore-unknown --write"
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-vinyl"
-    }
   },
   "devDependencies": {
     "@commitlint/cli": "^20.4.0",
