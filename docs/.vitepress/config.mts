@@ -6,7 +6,7 @@ import { head, markdown, nav, search, sidebar, socialLinks, transformPageData } 
 
 // 🔹 Base harus sesuai folder GitHub Pages root
 const Lumenversion = `v` + Lumenpkg.version
-const baseUrl = '/docs/'  // ⚡ untuk GitHub Pages /docs
+const baseUrl = '/'  // ⚡ untuk GitHub Pages /docs
 
 export default defineConfig({
   base: baseUrl,             // 🔹 tambahkan base
